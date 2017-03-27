@@ -28,4 +28,6 @@ plugin.tx_engage {
         cssFile = {$plugin.tx_engage.settings.cssFile}
 
     }
+
+    storagePid = {plugin.tx_engage.persistence.storagePid}
 }

@@ -23,7 +23,7 @@ namespace Bwd2\Engage\ViewHelpers;
 
 
 
-class SpecialMenuAddImagesViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
+class EngageViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
 {
 
     /**

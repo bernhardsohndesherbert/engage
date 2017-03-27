@@ -12,4 +12,7 @@ plugin.tx_engage {
         # cat=plugin.tx_engage/file; type=string; label=Path to CSS file
         cssFile = EXT:engage/Resources/Public/Css/engage-commons.css
     }
+
+    persistence.storagePid =
 }
+

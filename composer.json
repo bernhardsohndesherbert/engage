@@ -1,0 +1,34 @@
+{
+  "name": "typo3/engage",
+  "type": "typo3-cms-extension",
+  "description": "This extension that allows you to create more engagement for your Website",
+  "support": {
+    "issues": "http://git.e-conomix.at/typo3/ecxprjgreinertc/issues"
+  },
+  "keywords": [
+    "TYPO3", "engagement", "news", "view count", "stats"
+  ],
+  "homepage": "www.bwd2.at",
+  "authors": [
+    {
+      "name": "Bernhard Wendt",
+      "email": "bw@bernhardwendt.com",
+      "role": "Developer"
+
+    }
+  ],
+  "license": [
+    "GPL-2.0+"
+  ],
+  "version": "0.0.1",
+  "require": {
+    "typo3/cms-core": ">=8.6.0 <8.6.99"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bwd2\\Engage\\": "Classes/"
+    }
+  }
+}
+
+

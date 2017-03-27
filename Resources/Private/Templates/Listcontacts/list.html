@@ -1,0 +1,22 @@
+
+<div class="col-xxs-12 col-sm-8 col-sm-offset-2 col-md-offset-3 col-md-7 col-lg-offset-4 col-lg-5 ecx-localcontactselector-wrapper" xmlns:f="http://www.w3.org/1999/html">
+    <div class="row">
+        <div class="form-select-wrapper">
+            <select id="localcontact-selector">
+
+                <option value="-1"><f:translate key="LLL:templates/Private/language/locallang.xlf:localcontactSelector.all.name" /></option>
+                <option value="0"><f:translate key="LLL:templates/Private/language/locallang.xlf:localcontactSelector.noCountry.name" /></option>
+                <f:for each="{countryList}" as="country" iteration="iC">
+
+                    <option value="{country.uid}">{country.name}</option>
+
+                </f:for>
+            </select>
+        </div>
+        <f:for each="{localContacts}" as="contact" iteration="i">
+
+            <f:format.raw>{contact}</f:format.raw>
+
+        </f:for>
+    </div>
+</div>

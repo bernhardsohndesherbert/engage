@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2016-01-19T13:13:24Z" product-name="ecxprjgreinertc">
+        <header/>
+        <body>
+            <trans-unit id="countrySelector.label">
+                <target>Wählen Sie Ihr Land</target>
+            </trans-unit>
+            <trans-unit id="languageSelector.label">
+                <target>Wählen Sie Ihre Sprache</target>
+            </trans-unit>
+            <trans-unit id="yourContact.header">
+                <target>Ihr Kontakt</target>
+            </trans-unit>
+            <trans-unit id="callbackrequest.linktitle">
+                <target>Rückrufanfrage</target>
+            </trans-unit>
+            <trans-unit id="contactform.linktitle">
+                <target>Kontaktformular</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

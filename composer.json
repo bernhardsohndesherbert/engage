@@ -3,12 +3,12 @@
   "type": "typo3-cms-extension",
   "description": "This extension that allows you to create more engagement for your Website",
   "support": {
-    "issues": "http://git.e-conomix.at/typo3/ecxprjgreinertc/issues"
+    "issues": "https://gitlab.com/bernhardsohndesherbert/tx_engage/issues"
   },
   "keywords": [
     "TYPO3", "engagement", "news", "view count", "stats"
   ],
-  "homepage": "www.bwd2.at",
+  "homepage": "http://www.bwd2.at",
   "authors": [
     {
       "name": "Bernhard Wendt",

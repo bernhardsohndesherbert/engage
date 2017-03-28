@@ -21,25 +21,49 @@ namespace Bwd2\Engage\ViewHelpers;
      * The TYPO3 project - inspiring people to share!                         *
      *                                                                        */
 
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Extbase\Object\ObjectManager;
+use TYPO3\CMS\Core\Database\ConnectionPool;
+use TYPO3\CMS\Core\Database\Query\QueryBuilder;
+use TYPO3\CMS\Extbase\Persistence\Generic\Mapper\DataMapper;
+use TYPO3\CMS\Fluid\Core\Rendering\RenderingContextInterface;
+use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 
-class EngageViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
+
+
+class NewsDetailViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper
 {
 
     /**
      * Renders the image from page properties
      *
-     * @param array $page
-     * @return void
+     * @param integer $newsUid
+     * @return string $content
      * @author bwd2 (Bernhard Wendt)
      *
      */
 
 
-    public function render($page) {
+    public function render($newsUid) {
 
-        $output = $this->renderChildren();
 
-        return $output;
+        //@todo: get Values for News UID
+        //@todo: assign to array "engage" further use "{engage.totalViews}" and "{engage.fullViews}", ....
+
+
+        \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump('from engage', "My results");
+
+        $this->templateVariableContainer->add('firstVar','newsUid: '.$newsUid);
+        $this->templateVariableContainer->add('secondVar','secondVar VALUE');
+
+
+        //@todo: assign Values for further Templating
+
+
+        return $this->renderChildren();
+
     }
 }
+
+?>

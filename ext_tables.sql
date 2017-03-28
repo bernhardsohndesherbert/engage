@@ -25,8 +25,7 @@ CREATE TABLE tx_engage (
 	l10n_diffsource mediumtext,
 	deleted tinyint(4) DEFAULT '0' NOT NULL,
 	hidden tinyint(4) DEFAULT '0' NOT NULL,
-
-	total_views
+	total_views int(11) DEFAULT '0' NOT NULL,
 	full_views int(11) DEFAULT '0' NOT NULL,
 	avg_read_time int(11) DEFAULT '0' NOT NULL,
 	avg_read_length int(11) DEFAULT '0' NOT NULL,

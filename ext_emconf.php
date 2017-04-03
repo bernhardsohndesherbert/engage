@@ -2,7 +2,7 @@
 $EM_CONF[$_EXTKEY] = array (
     'title' => 'Engage',
     'description' => 'This extension that allows you to create more engagement for your Website',
-    'category' => 'Frontend',
+    'category' => 'misc',
     'version' => '0.0.2',
     'state' => 'alpha',
     'uploadfolder' => 0,

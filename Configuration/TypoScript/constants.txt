@@ -1,4 +1,4 @@
-plugin.tx_engage {
+plugin.engage {
     view {
         # cat=plugin.tx_engage/file; type=string; label=Path to template root
         templateRootPath = EXT:engage/Resources/Private/Templates/

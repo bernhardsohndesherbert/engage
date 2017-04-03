@@ -65,27 +65,15 @@ class DataHandler
             );
 
         \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($table, "My table");
-
-    //    \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump(is_integer($id), "My id");
-     //   \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($status, "My status");
         \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($fieldArray, "My fieldArray");
-        \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($pObj, "My pObj");
-
 
         if ($table === 'tx_news_domain_model_news' && is_integer($id) && $command !== 'undelete') {
 
 
-            //    \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump("in if condition", "My condition");
 
 
-            /*    $newsRecord = BackendUtilityCore::getRecord($table, $id);
-                if (!AccessControlService::userHasCategoryPermissionsForRecord($newsRecord)) {
-                    $parentObject->log($table, $id, 2, 0, 1,
-                        'processCmdmap: Attempt to ' . $command . " a record from table '%s' without permission. Reason: the record has one or more categories assigned that are not defined in the BE usergroup.",
-                        1, [$table]);
-                    // unset table to prevent saving
-                    $table = '';
-                }*/
+
+
         }
     }
 
@@ -110,8 +98,11 @@ class DataHandler
 
     public function processDatamap_preProcessFieldArray(array &$fieldArray, $table, $id, \TYPO3\CMS\Core\DataHandling\DataHandler &$pObj) {
 
-        $engage = GeneralUtility::makeInstance(\Bwd2\Engage::class);
-        \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($engage, "My settings");
+        $this->configurationManager = GeneralUtility::makeInstance('TYPO3\\CMS\\Extbase\\Configuration\\ConfigurationManager');
+
+        // Das komplette TypoScript holen
+        $extbaseFrameworkConfiguration = $this->configurationManager->getConfiguration(\TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT);
+        $config = $extbaseFrameworkConfiguration['plugin.']['engage.']['settings.'];
 
 
 

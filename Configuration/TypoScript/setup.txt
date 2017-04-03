@@ -25,8 +25,18 @@ plugin.engage {
     # Plugin Settings
     # ====================================
     settings {
-        cssFile = {$plugin.tx_engage.settings.cssFile}
-        foo = bla bla bla
+        # cssFile = {$plugin.tx_engage.settings.cssFile}
+
+        general {
+            wordsPerMinute = 275
+            includeTables = 1
+        }
+
+        tx_news_domain_model_news {
+            lookUpFields = title, teaser, bodytext
+            includeContentElements = 1
+        }
+
 
     }
 

@@ -36,6 +36,11 @@ class Engage extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
     /**
      * @var int
      */
+    protected $wordsToRead;
+
+    /**
+     * @var int
+     */
     protected $avgReadTime;
 
     /**
@@ -94,6 +99,27 @@ class Engage extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
      */
     public function setFullViews($fullViews) {
         $this->fullViews = $fullViews;
+    }
+
+
+    /**
+     * Get wordsToRead
+     *
+     * @return int
+     */
+    public function getWordsToRead() {
+        return $this->wordsToRead;
+    }
+
+
+    /**
+     * Set wordsToRead
+     *
+     * @param int $wordsToRead
+     * @return void
+     */
+    public function setWordsToRead($wordsToRead) {
+        $this->fullViews = $wordsToRead;
     }
 
 

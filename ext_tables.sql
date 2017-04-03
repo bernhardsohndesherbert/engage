@@ -27,6 +27,7 @@ CREATE TABLE tx_engage (
 	hidden tinyint(4) DEFAULT '0' NOT NULL,
 	total_views int(11) DEFAULT '0' NOT NULL,
 	full_views int(11) DEFAULT '0' NOT NULL,
+	words_to_read int(11) DEFAULT '0' NOT NULL,
 	avg_read_time int(11) DEFAULT '0' NOT NULL,
 	avg_read_length int(11) DEFAULT '0' NOT NULL,
 	record_type varchar(120) DEFAULT '' NOT NULL,

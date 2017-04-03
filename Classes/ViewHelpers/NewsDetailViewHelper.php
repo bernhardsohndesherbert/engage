@@ -52,6 +52,17 @@ class NewsDetailViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagB
         //@todo: assign to array "engage" further use "{engage.totalViews}" and "{engage.fullViews}", ....
 
 
+        GeneralUtility::makeInstance(ConnectionPool::class)
+            ->getConnectionForTable('tx_engage')
+            ->insert(
+                'tx_engage',
+                [
+                    'total_views' => 20,
+                    'full_views' => 11,
+                    'avg_read_time' => 120
+                ]
+            );
+
         \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump('from engage', "My results");
 
         $this->templateVariableContainer->add('firstVar','newsUid: '.$newsUid);

@@ -1,7 +1,7 @@
 # ==============================================
 # Configuration for EXT:engage
 # ==============================================
-plugin.tx_engage {
+plugin.engage {
     view {
         templateRootPaths {
             0 = EXT:engage/Resources/Private/Templates/
@@ -26,6 +26,7 @@ plugin.tx_engage {
     # ====================================
     settings {
         cssFile = {$plugin.tx_engage.settings.cssFile}
+        foo = bla bla bla
 
     }
 

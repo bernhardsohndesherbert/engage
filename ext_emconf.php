@@ -3,7 +3,7 @@ $EM_CONF[$_EXTKEY] = array (
     'title' => 'Engage',
     'description' => 'This extension that allows you to create more engagement for your Website',
     'category' => 'misc',
-    'version' => '0.0.2',
+    'version' => '0.0.3',
     'state' => 'alpha',
     'uploadfolder' => 0,
     'createDirs' => '',
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array (
         array (
             'depends' =>
                 array (
-                    'typo3' => '8.6.0-8.6.99',
+                    'typo3' => '8.6.0-8.9.99',
                 ),
             'conflicts' =>
                 array (

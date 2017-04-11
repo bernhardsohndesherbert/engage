@@ -20,7 +20,7 @@
   "license": [
     "GPL-2.0+"
   ],
-  "version": "0.0.3",
+  "version": "0.0.4",
   "require": {
     "typo3/cms-core": ">=8.6.0 <8.9.99"
   },

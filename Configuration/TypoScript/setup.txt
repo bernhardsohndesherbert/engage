@@ -1,7 +1,7 @@
 # ==============================================
 # Configuration for EXT:engage
 # ==============================================
-plugin.engage {
+plugin.tx_engage {
     view {
         templateRootPaths {
             0 = EXT:engage/Resources/Private/Templates/
@@ -30,15 +30,40 @@ plugin.engage {
         general {
             wordsPerMinute = 275
             includeTables = 1
+            includeHtmlTables = 1
         }
 
         tx_news_domain_model_news {
             lookUpFields = title, teaser, bodytext
-            includeContentElements = 1
+            includeCEs = 1
+            includeCEs.lookUpFields = header,subheader,bodytext
         }
 
 
     }
 
-    storagePid = {plugin.tx_engage.persistence.storagePid}
+    #storagePid = {plugin.tx_engage.persistence.storagePid}
+    storagePid = 16
 }
+
+
+
+
+engage = PAGE
+engage {
+    typeNum = {$plugin.tx_engage.settings.typeNum}
+
+    config {
+        disableAllHeaderCode = 1
+        additionalHeaders = Content-type:application/html
+        #additionalHeaders = Content-type:text/plain
+        xhtml_cleaning = 0
+        debug = 0
+        no_cache = 1
+        admPanel = 0
+        sendCacheHeaders=0
+    }
+
+    10 < tt_content.list.20.engage_frontendfunctions
+}
+

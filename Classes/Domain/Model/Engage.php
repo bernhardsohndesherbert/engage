@@ -14,11 +14,6 @@ namespace Bwd2\Engage\Domain\Model;
  * The TYPO3 project - inspiring people to share!
  */
 
-/**
- * News model
- *
- */
-
 
 class Engage extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 
@@ -51,7 +46,7 @@ class Engage extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
     /**
      * @var string
      */
-    protected $recordType;
+    public $recordType;
 
     /**
      * @var int
@@ -124,6 +119,27 @@ class Engage extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 
 
     /**
+     * Get sysReadTime
+     *
+     * @return int
+     */
+    public function getSysReadTime() {
+        return $this->sysReadTime;
+    }
+
+
+    /**
+     * Set sysReadTime
+     *
+     * @param int $sysReadTime
+     * @return void
+     */
+    public function setSysReadTime($sysReadTime) {
+        $this->sysReadTime = $sysReadTime;
+    }
+
+
+    /**
      * Get avgReadTime
      *
      * @return int
@@ -150,7 +166,7 @@ class Engage extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
      * @return int
      */
     public function getAvgReadLength() {
-        return $this->avgReadLength
+        return $this->avgReadLength;
     }
 
 
@@ -184,7 +200,6 @@ class Engage extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
     public function setRecordType($recordType) {
         $this->recordType = $recordType;
     }
-
 
     /**
      * Get recordUid
